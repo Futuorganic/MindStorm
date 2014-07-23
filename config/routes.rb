@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+
+  root 'robot#index'
+
+  get 'robot/move'
+  get 'robot/left'
+  get 'robot/right'
+  get 'robot/proximity'
+  # get 'robot/proximity'
+  # get 'robot/proximity'
+  # get 'robot/proximity'
+  # get 'robot/proximity'
+  # get 'robot/proximity'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

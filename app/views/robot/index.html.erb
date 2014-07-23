@@ -1,0 +1,10 @@
+<h1> ROBOT! </h1>
+
+<section class="counter">
+  <div class="circle"><p class='proximity'> <%= @proximity %> </p> </div>
+</section>
+
+<p><%= link_to "MOVE ME", robot_move_path %></p>
+<p><%= link_to "LEFT", robot_left_path %></p>
+<p><%= link_to "RIGHT", robot_right_path %></p>
+<p><%= link_to "RELOAD PROXIMITY", root_path %></p>

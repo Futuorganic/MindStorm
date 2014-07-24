@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   get 'robot/right'
   get 'robot/proximity'
   get 'robot/attack'
-  # get 'robot/proximity'
-  # get 'robot/proximity'
-  # get 'robot/proximity'
-  # get 'robot/proximity'
-  # get 'robot/proximity'
+  get 'robot/forward'
+  get 'robot/backward'
+  get 'robot/slow_forward'
+  get 'robot/slow_backward'
+  get 'robot/run'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -20,6 +20,31 @@ class RobotController < ApplicationController
     redirect_to root_path
   end
 
+  def forward
+    @robot.forward
+    redirect_to root_path
+  end
+
+  def backward
+    @robot.backward
+    redirect_to root_path
+  end
+
+  def slow_forward
+    @robot.slow_forward
+    redirect_to root_path
+  end
+
+  def slow_backward
+    @robot.slow_backward
+    redirect_to root_path
+  end
+
+  def run
+    @robot.run
+    redirect_to root_path
+  end
+
   def proximity
     redirect_to root_path
   end

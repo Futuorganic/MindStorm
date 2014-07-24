@@ -3,7 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
+  padding-top: 200px;
   text-align: center;
+  background-image: url('http://igalleriez.com/wp-content/uploads/2014/01/3d-robot-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: 960px 600px;
+  background-position:center;
 }
 .circle {
   background: lightblue;
@@ -25,4 +30,17 @@ body {
 }
 .counter {
   width: 100%;
+}
+p {
+
+}
+p a {
+  color: white;
+}
+p a:hover {
+  text-decoration: none;
+  color: white;
+}
+li {
+  display: inline-block;
 }

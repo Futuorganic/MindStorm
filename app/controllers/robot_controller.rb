@@ -1,8 +1,8 @@
 class RobotController < ApplicationController
-  before_action :set_robot
+    #before_action :set_robot
 
   def index
-    @proximity = @robot.proximity
+    #@proximity = @robot.proximity
   end
 
   def move

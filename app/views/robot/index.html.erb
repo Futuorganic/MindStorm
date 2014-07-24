@@ -1,16 +1,26 @@
-<h1> ROBOT! </h1>
-
-<section class="counter">
+ <section class="counter">
   <div class="circle"><p class='proximity'> <%= @proximity %> </p> </div>
 </section>
 
-<p><%= link_to "MOVE ME", robot_move_path %></p>
+
 <p><%= link_to "LEFT", robot_left_path %></p>
 <p><%= link_to "RIGHT", robot_right_path %></p>
 <p><%= link_to "RELOAD PROXIMITY", root_path %></p>
-<p><%= link_to "ATTACK", robot_attack_path %></p>
+
 <p><%= link_to "FORWARD", robot_attack_path %></p>
 <p><%= link_to "BACKWARD", robot_attack_path %></p>
 <p><%= link_to "SLOW FORWARD", robot_attack_path %></p>
 <p><%= link_to "SLOW BACKWARD", robot_attack_path %></p>
 <p><%= link_to "RUN", robot_attack_path %></p>
+<ul>
+	<li>
+		<p>
+			<button type="button" class="btn btn-primary btn-lg"><%= link_to "MOVE ME", robot_move_path %></button>
+		</p>
+	</li>
+	<li>
+		<p>
+			<button type="button" class="btn btn-danger btn-lg"><%= link_to "ATTACK", robot_attack_path %></button>
+		</p>
+	</li>
+</ul>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'robot/left'
   get 'robot/right'
   get 'robot/proximity'
+  get 'robot/attack'
   # get 'robot/proximity'
   # get 'robot/proximity'
   # get 'robot/proximity'

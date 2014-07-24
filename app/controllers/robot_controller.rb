@@ -24,6 +24,11 @@ class RobotController < ApplicationController
     redirect_to root_path
   end
 
+  def attack
+    @robot.attack
+    redirect_to root_path
+  end
+
   private
 
   def set_robot

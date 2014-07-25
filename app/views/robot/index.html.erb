@@ -1,40 +1,37 @@
 <div class="container">
- <ul class="list_buttons">
-	<li>
-		<p><%= link_to "RELOAD PROXIMITY", root_path, class:"btn btn-info" %></p>	
-	</li>
-	<li>
-		<p><%= link_to "MOVE ME", robot_move_path, class:"btn btn-primary" %></p>
-	</li>
-	<li>
-		<p><%= link_to "ATTACK", robot_attack_path, class:"btn btn-danger" %></p>
-	</li>
-		
-</ul>
-<div class="ribbon">
+ 		<ul class="list_buttons">
+			<li>
+				<p><%= link_to "RELOAD PROXIMITY", root_path, class:"btn btn-info" %></p>	
+			</li>
+			<li>
+				<p><%= link_to "MOVE ME", robot_move_path, class:"btn btn-primary" %></p>
+			</li>
+			<li>
+				<p><%= link_to "ATTACK", robot_attack_path, class:"btn btn-danger" %></p>
+			</li>
+		</ul>
+ 
+	<section class="counter">
+  		<div class="ribbon"><p> <%= @proximity %> </p> 
+  		</div>
+  		<div class="triangle">
+  		</div>
+	</section>
+
+	<div class="moves_arrows">
+		<ul class="arrows_menu">
+			<li><img id="backward" alt="Arrow backward" src="/assets/two_arrows_up1.png"/></li>
+			<li><img id="left" alt="Arrow left" src="/assets/two_arrows_left2.png"/></li>
+			<li><img id="right" alt="Arrow right" src="/assets/two_arrows_right2.png"/></li>
+			<li><img id="forward" alt="Arrow forward" src="/assets/two_arrows_down1.png"/></li>
+		</ul>
+	</div>
 
 </div>
- <section class="counter">
-  <div class="circle"><p class='proximity'> <%= @proximity %> </p> </div>
-</section>
-
-
-
-
+<p><%= link_to "FORWARD", robot_attack_path %></p>
 <p><%= link_to "LEFT", robot_left_path %></p>
 <p><%= link_to "RIGHT", robot_right_path %></p>
-
-
 <p><%= link_to "BACKWARD", robot_attack_path %></p>
 <p><%= link_to "SLOW FORWARD", robot_attack_path %></p>
 <p><%= link_to "SLOW BACKWARD", robot_attack_path %></p>
 <p><%= link_to "RUN", robot_attack_path %></p>
-
-<img id="backward" alt="Arrow backward" src="/assets/two_arrows_up1.png"/>
-<ul class="left_right_arrows">
-	<li><img id="left" alt="Arrow left" src="/assets/two_arrows_left2.png"/></li>
-	<li><img id="right" alt="Arrow right" src="/assets/two_arrows_right2.png"/></li>
-</ul>
-<img id="forward" alt="Arrow forward" src="/assets/two_arrows_down1.png"/><%= link_to "FORWARD", robot_attack_path %> 
-
-</div>

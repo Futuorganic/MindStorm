@@ -2,7 +2,11 @@ class RobotController < ApplicationController
     #before_action :set_robot
 
   def index
-    #@proximity = @robot.proximity
+    begin
+    @proximity = @robot.proximity
+    rescue Exception => e
+      @proximity = 0
+    end
   end
 
   def move
